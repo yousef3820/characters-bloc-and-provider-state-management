@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_bloc_state_management/domain/entities/character_entity.dart';
+import 'package:flutter_application_bloc_state_management/data/models/character_model.dart';
 import 'package:flutter_application_bloc_state_management/presentation/screens/character_details_screen.dart';
 import 'package:lottie/lottie.dart';
 
 class CharacterItem extends StatelessWidget {
-  final CharacterEntity character;
+  final CharacterModel character;
   const CharacterItem({super.key, required this.character});
   @override
   Widget build(BuildContext context) {

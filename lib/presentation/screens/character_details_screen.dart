@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_bloc_state_management/domain/entities/character_entity.dart';
+import 'package:flutter_application_bloc_state_management/data/models/character_model.dart';
 
 class CharacterDetailsScreen extends StatelessWidget {
-  final CharacterEntity character;
+  final CharacterModel character;
   const CharacterDetailsScreen({super.key , required this.character});
   Widget _buildText(String title, String value)
   {

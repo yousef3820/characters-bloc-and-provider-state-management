@@ -8,7 +8,7 @@ final class GetAllCharactersInitial extends GetAllCharactersState {}
 final class GetAllCharactersLoading extends GetAllCharactersState {}
 
 final class GetAllCharactersSuccess extends GetAllCharactersState {
-  final List<CharacterEntity> characters;
+  final List<CharacterModel> characters;
 
   GetAllCharactersSuccess({required this.characters});
 }

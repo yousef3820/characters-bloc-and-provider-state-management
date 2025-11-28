@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_bloc_state_management/domain/entities/character_entity.dart';
+import 'package:flutter_application_bloc_state_management/data/models/character_model.dart';
 import 'package:flutter_application_bloc_state_management/presentation/state_management/provider/character_provider.dart';
 import 'package:flutter_application_bloc_state_management/presentation/widgets/character_item.dart';
 import 'package:flutter_offline/flutter_offline.dart';
@@ -14,8 +14,8 @@ class CharactersScreen extends StatefulWidget {
 }
 
 class _CharactersScreenState extends State<CharactersScreen> {
-  late List<CharacterEntity> charactes;
-  late List<CharacterEntity> searchedCharacters;
+  late List<CharacterModel> charactes;
+  late List<CharacterModel> searchedCharacters;
   bool isSearching = false;
   bool _wasOffline = false;
 

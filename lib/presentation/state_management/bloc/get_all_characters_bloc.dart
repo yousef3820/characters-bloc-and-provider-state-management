@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter_application_bloc_state_management/core/service_locator.dart';
-import 'package:flutter_application_bloc_state_management/domain/entities/character_entity.dart';
+import 'package:flutter_application_bloc_state_management/data/models/character_model.dart';
 import 'package:flutter_application_bloc_state_management/domain/usecases/get_all_characters_usecase.dart';
 import 'package:meta/meta.dart';
 

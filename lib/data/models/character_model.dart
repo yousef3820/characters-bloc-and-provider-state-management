@@ -1,9 +1,8 @@
 import 'package:flutter_application_bloc_state_management/core/network/api_end_points.dart';
 import 'package:flutter_application_bloc_state_management/data/models/sub_models/location_model.dart';
 import 'package:flutter_application_bloc_state_management/data/models/sub_models/origin_model.dart';
-import 'package:flutter_application_bloc_state_management/domain/entities/character_entity.dart';
 
-class CharacterModel extends CharacterEntity {
+class CharacterModel{
   final int id;
   final String species;
   final String type;
@@ -11,18 +10,23 @@ class CharacterModel extends CharacterEntity {
   final LocationModel location;
   final String url;
   final String created;
+  final String name;
+  final String status;
+  final String gender;
+  final String image;
+  final List<dynamic> episode;
 
   CharacterModel({
     required this.id,
-    required super.name,
-    required super.status,
+    required this.name,
+    required this.status,
     required this.species,
     required this.type,
-    required super.gender,
+    required this.gender,
     required this.origin,
     required this.location,
-    required super.image,
-    required super.episode,
+    required this.image,
+    required this.episode,
     required this.url,
     required this.created,
   });
